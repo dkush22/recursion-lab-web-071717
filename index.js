@@ -1,12 +1,9 @@
 function printString(myString) {
-  console.log(myString[0]);
- 
-  if (myString.length > 1) {
-    let mySubString = myString.substring(1, myString.length);
-    printString(mySubString);
-  } else {
-    return true;
-  }
+console.log(myString[0])
+if (myString.length > 1) {
+let mySubString = myString.substring(1, myString.length)
+printString(mySubString)
+} else return true
 }
 
 
@@ -33,11 +30,11 @@ function isPalindrome(myString) {
 }
 
 function addUpTo(myArray, index) {
-  if (index === 0) {
-    return myArray[0]
-  } else {
-    return myArray[index] + addUpTo(myArray, index - 1)
-  }
+if (index === 0) {
+  return myArray[0]
+} else {
+  return myArray[index] + addUpTo(myArray, index - 1)
+}
 }
 
 
